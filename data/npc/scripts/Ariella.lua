@@ -21,7 +21,7 @@ function PirateSecond(cid, message, keywords, parameters, node)
     end
 	
 	local p = Player(cid) 
-	if(p:getStorageValue(22034) ~= -1) then
+	if(p:getStorageValue(22034) == -1) then
 		if(p:getItemCount(6101) >= 1 and p:getItemCount(6102) >= 1 and p:getItemCount(6100) >= 1 and p:getItemCount(6099) >= 1) then
 			if(p:removeItem(6101, 1) and p:removeItem(6102, 1) and p:removeItem(6100, 1) and p:removeItem(6099, 1)) then
 				npcHandler:say("Ah, right! The pirate hat! Here you go.", cid)             
